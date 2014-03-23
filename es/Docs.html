@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="https://avatars2.githubusercontent.com/u/6866854?s=35">
-    <title>Rixor | Docs</title>
+    <title>Rixor | Documentación</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="../js/bootstrap.js"></script>
@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="divider"></li>
-            <li rel="tooltip" data-placement="bottom" title="Main Site"><a href="index.html"><i class="fa fa-home"></i> Inicio</a></li>
+            <li rel="tooltip" data-placement="bottom" title="Sitio principal"><a href="index.html"><i class="fa fa-home"></i> Inicio</a></li>
             <li rel="tooltip" data-placement="bottom" title="Cómo instalar Rixor"><a href="Tutorial.html"><i class="fa fa-info-circle"></i> Tutorial</a></li>
             <li class="active" rel="tooltip" data-placement="bottom" title="Toda la documentación de Rixor"><a href="Docs.html"><i class="fa fa-book"></i> Documentación</a></li>
             <li rel="tooltip" data-placement="bottom" title="Ver Código"><a href="https://github.com/ProjectRixor/Rixor"><i class="fa fa-code"></i> Código</a></li>
@@ -59,38 +59,38 @@
         
     <!--Navbar End / Start of the content-->
         <div class="alert alert-info">
-            <p><strong><i class="fa fa-info-circle"></i></strong> The Docs are under construction! You should read the official <a href="http://docs.oc.tc">OverCast Documentation</a></p>
+            <p><strong><i class="fa fa-info-circle"></i></strong> Se está trabajando la documentación. Deberías leer la documentación oficial en <a href="http://docs.oc.tc">OverCast</a></p>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h1 class="panel-title">Rixor Docs</h1>
+                <h1 class="panel-title">Documentación de Rixor</h1>
             </div>
             <div class="panel-body">
                 <h2>Events</h2>
                 <hr>
-                <h3>PlayerChatEvent <em><h4>Cancellable: YES</h4></em></h3>
-                <p><strong>Client</strong> getClient() - returns the Client that sent</p>
-                <p><strong>String</strong> getMessage() - returns the message that was sent</p>
+                <h3>PlayerChatEvent <em><h4>Cancelable: SI</h4></em></h3>
+                <p><strong>Client</strong> getClient() - retorna lo que el Cliente ha enviado</p>
+                <p><strong>String</strong> getMessage() - retorna el mensaje que fue enviada</p>
                 <br>
-                <h3>BlockChangeEvent <em><h4>Cancellable: YES</h4></em></h3>
+                <h3>BlockChangeEvent <em><h4>Cancelable: SI</h4></em></h3>
                 <p><strong>Event</strong> getCause() - returns the Bukkit event that caused this event to fire</p>
-                <p><strong>Map</strong> getMap() - returns the map that the event occured in</p>
-                <p><strong>Client</strong> getClient() - returns the Client that caused this event</p>
-                <p><strong>BlockState</strong> getOldState() - returns the old state of the Block</p>
-                <p><strong>BlockState</strong> getNewState() - returns the new state of the Block</p>
+                <p><strong>Map</strong> getMap() - retorna el mapa en el que el evento ocurre</p>
+                <p><strong>Client</strong> getClient() - retorna el Cliente que causó el evento</p>
+                <p><strong>BlockState</strong> getOldState() - retorna el antiguo estado del bloque</p>
+                <p><strong>BlockState</strong> getNewState() - retorna el nuevo estado del bloque</p>
                 <br>
-                <h3>PlayerDiedEvent <em><h4>Cancellable: NO</h4></em></h3>
+                <h3>PlayerDiedEvent <em><h4>Cancelable: NO</h4></em></h3>
                 <p><strong>Map</strong> getMap() - returns the map that the player died in</p>
-                <p><strong>Player</strong> getKiller() - returns the killer</p>
-                <p><strong>Player</strong> getKilled() - returns the person that was killed</p>
+                <p><strong>Player</strong> getKiller() - retorna el que mató</p>
+                <p><strong>Player</strong> getKilled() - retorna la persona que fue asesinada</p>
                 <br>
-                <h3>MatchStateEvent <em><h4>Cancellable: NO</h4></em></h3>
-                <p><strong>Map</strong> getMap() - returns the map that started</p>
-                <p><strong>Match</strong> getMatch() - returns the match that started</p>
+                <h3>MatchStateEvent <em><h4>Cancelable: NO</h4></em></h3>
+                <p><strong>Map</strong> getMap() - retorna el mapa que ha iniciado</p>
+                <p><strong>Match</strong> getMatch() - retorna la partida que ha iniciado</p>
                 <br>
-                <h3>MatchCycleEvent <em><h4>Cancellable: NO</h4></em></h3>
-                <p><strong>Map</strong> getMapFrom() - returns the map that is being cycled away from</p>
-                <p><strong>Map</strong> getMapTo() - returns the map thats cycling to</p>
+                <h3>MatchCycleEvent <em><h4>Cancelable: NO</h4></em></h3>
+                <p><strong>Map</strong> getMapFrom() - retorna el mapa desde el cual se está haciendo rotación</p>
+                <p><strong>Map</strong> getMapTo() - retorna el mapa al cuál se está haciendo rotación</p>
                 <br>
             </div>
         </div>
